@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Привет! Этот сайт некрасивый. Нужно сделать его красивым.</h1>
-    <p>Нажми S, чтобы призвать кнопку</p>
+    <h1 id="hello">Привет! Этот сайт некрасивый. Нужно сделать его красивым.</h1>
+    <p id="summon">Нажми S, чтобы призвать кнопку</p>
 
     <button id="button" style="display:none">Привет</button>
+
+    <div>
+        <input type="radio" id="default" name="bg" value="default">
+        <label for="default">Huey</label>
+      </div>
+    
+      <div>
+        <input type="radio" id="good" name="bg" value="dewey">
+        <label for="good"><img src="good.jpeg" alt="" style="height:100px"></label>
+      </div>
+    
+      <div>
+        <input type="radio" id="perfect" name="bg" value="louie">
+        <label for="perfect"><img src="perfect.png" alt="" style="height:100px"></label>
+      </div>
 
     <script src="script.js"></script>
 </body>
