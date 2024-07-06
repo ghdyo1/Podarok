@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>зачем ты это читаешь</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="hello">Привет! Этот сайт некрасивый. Нужно сделать его красивым.</h1>
     <p id="summon">Нажми S, чтобы призвать кнопку</p>
 
     <div id="quiz" style="display:none">
-        <h3>Выбери фон для сайта.</h3>
+        <h3 id="q"></h3>
         <div>
-            <input type="radio" id="rad1" name="quiz" value="1">
-            <label for="rad1">Выбрать цвет: <input type="color" id="colorbg"></label>
+            <input type="radio" id="rad1" name="quiz" value="1" checked>
+            <label for="rad1" id="v1"></label>
         </div>
         
         <div>
             <input type="radio" id="rad2" name="quiz" value="2">
-            <label for="rad2"><img src="good.jpeg" alt="" style="height:100px"></label>
+            <label for="rad2" id="v2"></label>
         </div>
     
         <div>
             <input type="radio" id="rad3" name="quiz" value="3">
-            <label for="rad3"><img src="perfect.png" alt="" style="height:100px"></label>
+            <label for="rad3" id="v3"></label>
         </div>
     </div>
 
     <button id="button" style="display:none">Привет</button>
-    
+
+    <div id="fin-img-wrap" style="display:flex;width:100%;justify-content:center;align-items:center;display:none">
+        <img src="happy.jpeg" style="height:600px;border:solid 10px #000000">
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
